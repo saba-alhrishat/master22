@@ -36,16 +36,41 @@
 
         <h1>ArtVerse</h1>
     </div>
-    
+            
     <nav>
         <ul>
-            <li><a href="home2.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="aboutus.html">About</a></li>
             <li><a href="gallary.html">Gallary</a></li>
             <li><a href="artists.html">Artists</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
+            <li>
+                <select onchange="window.location.href=this.value"
+                style="   
+                border: 2px #ff6b6b solid;
+                background-color: black;
+                color: white;
+                padding: 6px 10px;
+                border-radius: 5px ;
+                margin-left: 10px;
+                font-weight: bold;
+                "
+                
+                
+                >
+
+
+                    <option selected disabled >More Pages</option >
+                    <option value="cart.html"  >Cart</option>
+                    <option value="checkout.html" >Checkout</option>
+                    <option value="my-account.html" >My Account</option>
+                </select>
+            </li>
         </ul>
     </nav>
+    
+
+
     <div class="auth">
         <a href="login.html" class="btn">Login</a>
         <a href="signup.html" class="btn btn-primary">Sign Up</a>
