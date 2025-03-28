@@ -1,0 +1,385 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    opacity: 0.98;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ff6b6b;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+header .auth {
+    display: flex;
+    gap: 10px;
+}
+
+header .auth .btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ff6b6b;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+header .auth .btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+header .auth .btn:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+/* Auth Wrapper */
+.auth-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    
+}
+
+/* Art Section */
+.art-section {
+    flex: 1;
+    background-image: url('../img/colores.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.art-section img {
+    display: none;
+}
+
+.art-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.art-overlay h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.art-overlay p {
+    font-size: 16px;
+    color: #f4f4f4;
+}
+
+/* Auth Container */
+.auth-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.auth-form p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e65a5a;
+}
+
+/* Map Section */
+.map-section {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #e65a5a;
+    margin: 20px;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-size: 24px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* نسبة العرض إلى الارتفاع (16:9) */
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.socialicon a:hover {
+    background-color: black;
+}
+
+.socialicon a i {
+    color: black;
+    opacity: 0.9;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.socialicon a:hover i {
+    color: white;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #ff6b6b;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    header nav {
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header .auth {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .auth-wrapper {
+        flex-direction: column;
+    }
+
+    .art-section {
+        padding: 20px;
+    }
+
+    .auth-container {
+        padding: 20px;
+    }
+
+    .map-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    header .auth .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .art-overlay h2 {
+        font-size: 24px;
+    }
+
+    .art-overlay p {
+        font-size: 14px;
+    }
+
+    .auth-form h2 {
+        font-size: 20px;
+    }
+
+    .auth-form p {
+        font-size: 12px;
+    }
+
+    .map-section h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,140 @@
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    /* background: linear-gradient(to bottom, #222, #444); */
+    background:black;
+    color: white;
+    position: relative;
+}
+
+.testimonial-container {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.testimonial {
+    display: none;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ff6b6b;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #ddd;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: #ff4b4b;
+}
+
+
+/* تنسيق الفوتر */
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 3px solid #ff6b6b;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.socialicon a:hover {
+    background-color: black;
+}
+
+.socialicon a i {
+    color: black;
+    opacity: 0.9;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.socialicon a:hover i {
+    color: white;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #ff6b6b;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #fff;
+}

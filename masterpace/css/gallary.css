@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* إعدادات عامة */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    background-image: url(../img/colores.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+/* تنسيق الهيدر */
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    opacity: 0.98;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ff6b6b;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+header .auth .btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 1px solid #ff6b6b;
+    transition: background-color 0.3s;
+}
+
+header .auth .btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+header .auth .btn:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+
+/*** Events Start ***/
+.gallery .tab-class .nav-item {
+    padding: 0 0 20px 0;
+}
+.gallery .tab-class .nav-item a.active {
+    background: var(--bs-primary) !important;
+}
+
+.gallery .tab-class .nav-item a.active span {
+    color: var(--bs-white) !important;
+}
+
+.gallery .gallery-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery .gallery-img img {
+    transition: 0.5s;
+}
+
+.gallery .gallery-img:hover img {
+    transform: scale(1.3);
+}
+
+.gallery .gallery-img .gallery-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.gallery .gallery-img .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 2;
+    
+}
+
+.gallery .gallery-img:hover .gallery-overlay,
+.gallery .gallery-img:hover .search-icon {
+    opacity: 1;
+}
+/*** Events End ***/
+
+/* تنسيق الفوتر */
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 3px solid #ff6b6b;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.socialicon a:hover {
+    background-color: black;
+}
+
+.socialicon a i {
+    color: black;
+    opacity: 0.9;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.socialicon a:hover i {
+    color: white;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #ff6b6b;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+

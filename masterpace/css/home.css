@@ -1,0 +1,523 @@
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+/* Logo Styles */
+/* تنسيق الهيدر */
+.logo {
+display: flex;
+align-items: center; /* لتوسيط العناصر عموديًا */
+gap: 5px; /* المسافة بين الشعار والنص */
+}
+
+.logo img {
+max-height: 50px; /* يمكنك تعديل الارتفاع حسب الحاجة */
+width: auto; 
+border-radius: 30px;
+
+}
+
+.logo h1 {
+font-size: 24px; /* حجم النص */
+color: #ff6b6b; /* لون النص */
+margin: 0; /* إزالة الهوامش الافتراضية */
+}
+header {
+height: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #1e1e1e;
+color: #fff;
+position: sticky;
+top: 0;
+opacity: 0.98;
+z-index: 1000;
+}
+
+header .logo h1  {
+font-size: 24px;
+color: #ff6b6b;
+}
+
+header nav ul {
+list-style: none;
+display: flex;
+}
+
+header nav ul li {
+margin-right: 20px;
+}
+
+header nav ul li a {
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+color: #ff6b6b;
+}
+
+header .auth .btn {
+background-color: transparent;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-left: 10px;
+border: 1px solid #ff6b6b;
+transition: background-color 0.3s;
+
+}
+
+header .auth .btn-primary {
+background-color: #ff6b6b;
+border: none;
+}
+
+ header .auth .btn:hover  {
+background-color: #ff6b6b;
+color: #fff;
+}
+
+/* Hero Section */
+.hero {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 60px 20px;
+/* background-color: #1e1e1e; */
+
+
+color: black;
+background-image: url(../img/colores.jpg);
+/* background-image: url(../img/medraw2.jpg); */
+background-size: contain;
+background-attachment: fixed;
+background-position: center;
+height: 400px;
+
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn-primary {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn-primary:hover {
+    background-color: #e65a5a;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-text ul li i {
+    color: #ff6b6b;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.about-text .btn-primary {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.about-text .btn-primary:hover {
+    background-color: #e65a5a;
+}
+
+.about-image img {
+    max-width: 80%;
+    border-radius: 10px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Featured Artworks Section */
+.featured-artworks {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1e1e1ef7;
+}
+
+.artworks-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.artwork {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.artwork:hover {
+    transform: translateY(-10px);
+}
+
+.artwork img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.artwork h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #f4f4f4;
+
+}
+
+.artwork p {
+    font-size: 16px;
+    color: #666;
+    
+}
+
+.artwork .btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.artwork .btn:hover {
+    background-color: #e65a5a;
+}
+
+/* Featured Artists Section */
+.featured-artists {
+    padding: 60px 20px;
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+.artists-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.artist {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+
+}
+
+.artist:hover {
+    transform: translateY(-10px);
+}
+
+.artist img {
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.artist h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.artist p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #333;;
+}
+
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialicon a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialicon a i {
+    color: black;
+    opacity: 0.9;
+    font-size: 2em;
+}
+
+.socialicon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* margin-top: 50px; */
+    border-top: 3px solid #ff6b6b;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #ff6b6b;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .artworks-grid, .artists-grid {
+        flex-direction: column;
+    }
+
+    .artwork, .artist {
+        width: 100%;
+    }
+
+ 
+}
+
+
+
+
+
+/* تنسيق الفوتر */
+footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 3px solid #ff6b6b;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.socialicon a:hover {
+    background-color: black;
+}
+
+.socialicon a i {
+    color: black;
+    opacity: 0.9;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.socialicon a:hover i {
+    color: white;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #ff6b6b;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #fff;
+}

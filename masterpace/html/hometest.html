@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtVerse</title>
+    <link rel="shortcut icon" href="../img/boma.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/home.css">
+ 
+
+            <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+    
+            <!-- Icon Font Stylesheet -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+            
+            <!-- Libraries Stylesheet -->
+            <link href="lib/animate/animate.min.css" rel="stylesheet">
+            <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+            <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+    
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="../csst/bootstrap.min.css" rel="stylesheet">
+    
+            <!-- Template Stylesheet -->
+            <link href="../csst/style.css" rel="stylesheet">
+            <link href="../css/aboutus.css" rel="stylesheet">
+
+            <link rel="shortcut icon" href="bbb2.jpg" type="image/x-icon">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <img src="../img/boma.png" alt="Logo">
+
+            <h1>ArtVerse</h1>
+        </div>
+        
+         <nav>
+            <ul>
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li>
+                    <select onchange="window.location.href=this.value"
+                    style="   
+                    border: 2px #ff6b6b solid;
+                    background-color: black;
+                    color: white;
+                    padding: 6px 10px;
+                    border-radius: 5px ;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    "
+                    
+                    
+                    >
+
+
+                        <option selected disabled >More Pages</option >
+                        <option value="cart.html"  >Cart</option>
+                        <option value="checkout.html" >Checkout</option>
+                        <option value="my-account.html" >My Account</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        
+
+
+
+
+
+
+
+
+
+        <div class="auth">
+            <a href="login.html" class="btn">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+        <!-- <div class="menu-icon" onclick="toggleMenu()">☰</div> -->
+    </header>
+   
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Discover a World of  Art</h2>
+            <p>A global platform to buy and sell artworks.</p>
+            <a href="gallary.html" class="btn btn-primary">Explore Artworks</a>
+        </div>
+        <div class="hero-image">
+            
+            <!-- <img src="queen logo.webp" alt="Digital Art"> -->
+        </div>
+    </section>
+
+<!-- About Us Section -->
+<section class="about-us" id="about-us">
+    <h2>About Us</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <h3>Connecting Artists with Buyers Worldwide</h3>
+            <p>
+                ArtVerse is a global platform designed to bridge the gap between talented artists and art enthusiasts. 
+                Whether you're an artist looking to showcase your work or a buyer searching for unique digital art, 
+                ArtVerse provides a secure and user-friendly environment to connect, explore, and transact.
+            </p>
+            <ul>
+                <li><i class="fas fa-paint-brush"></i> Showcase your creativity to a global audience.</li>
+                <li><i class="fas fa-shopping-cart"></i> Buy and sell digital art with ease.</li>
+                <li><i class="fas fa-globe"></i> Reach art lovers from all around the world.</li>
+            </ul>
+            <a href="signup.html" class="btn btn-primary">Join Our Community</a>
+        </div>
+        <div class="about-image">
+            <img style="width: 300px; height:400px;" src="../img/himg/h1.jpg" alt="About Us">
+        </div>
+    </div>
+</section>
+
+     <!-- Featured Artworks Section -->
+     <section class="featured-artworks" id="featured-artworks">
+        <h2>Featured Artworks</h2>
+        <div class="artworks-grid">
+            <div class="artwork">
+                <img style="width: 300px; height: 400px;" src="../img/fimg/f14.jpg" alt="Artwork 3">
+                <h3>Artwork Title 1</h3>
+                <p>Artist: John Doe</p>
+                <br>
+                <a href="cart.html" class="btn">Buy Now</a>
+            </div>
+            <div class="artwork">
+                <img style="width: 300px; height: 400px;" src="../img/fimg/f11.jpg" alt="Artwork 3">
+                <h3>Artwork Title 2</h3>
+                <p>Artist: Jane Smith</p>
+                <br>
+                <a href="cart.html" class="btn">Buy Now</a>
+            </div>
+            <div class="artwork">
+                <img style="width: 300px; height: 400px;" src="../img/fimg/f12.jpg" alt="Artwork 3">
+                <h3>Artwork Title 3</h3>
+                <p>Artist: Alex Brown</p>
+                <br>
+                <a href="cart.html" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artists Section -->
+    <section class="featured-artists" id="featured-artists">
+        <h2>Featured Artists</h2>
+        <div class="artists-grid">
+            <div class="artist">
+                <img src="../img/artists/artist1.png" alt="Artist 1">
+                <h3>John Doe</h3>
+                <p>Digital Illustrator</p>
+            </div>
+            <div class="artist">
+                <img src="../img/artists/artist1.png" alt="Artist 1">
+                <h3>Jane Smith</h3>
+                <p>Graphic Designer</p>
+            </div>
+            <div class="artist">
+                <img src="../img/artists/artist1.png" alt="Artist 1">
+                <h3>Alex Brown</h3>
+                <p>Abstract Artist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Be the first to know about new artworks and exclusive offers.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br/>
+ <!-- Footer -->
+ <footer>
+ <div class="socialicon">
+    <a href="https://www.facebook.com/" target="_blank">
+         <i class="fa-brands fa-facebook"></i>
+        </a>
+    <a href="https://www.instagram.com/" target="_blank"> 
+        <i class="fa-brands fa-instagram" ></i>
+    </a>
+    <a href=""> <i class="fa-brands fa-twitter" target="_blank"></i></a>
+    <a href=""> <i class="fa-brands fa-youtube" target="_blank"></i></a>
+</div><br/>
+
+    <div class="footer-content">
+        <p>© 2025 ArtVerse. All rights reserved.</p><br/>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+<!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
